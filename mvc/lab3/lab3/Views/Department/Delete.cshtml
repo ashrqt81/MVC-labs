@@ -1,0 +1,23 @@
+﻿@model Department
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <h4>are you sure you want to delete this department  @Model.DeptId @Model.Name @Model.Capacity </h4>
+    <form method="post" class="form-Group">
+        <input asp-for="DeptId" type="hidden" />
+       Name <input asp-for="Name" class="form-control" />
+       Capacity<input asp-for="Capacity" class="form-control" />
+       <input  type="submit" value="Delete"/>
+    </form>
+</body>
+</html>

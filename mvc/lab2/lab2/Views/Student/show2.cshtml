@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>show2</title>
+</head>
+<body>
+    <h1>show2 view</h1>
+    <h1>
+        @((ViewData["std1"] as Students)?.Id)
+        @((ViewData["std1"] as Students)?.fname)
+        @((ViewData["std1"] as Students)?.lname)
+        @((ViewData["std1"] as Students)?.age)
+        @((ViewData["course"]as Students)?.courses)
+        <img src="/images/@ViewData["imgname"]" />
+
+        @((ViewData["std2"] as Students)?.Id)
+        @((ViewData["std2"] as Students)?.fname)
+        @((ViewData["std2"] as Students)?.lname)
+        @((ViewData["std2"] as Students)?.age)
+    </h1>
+</body>
+</html>

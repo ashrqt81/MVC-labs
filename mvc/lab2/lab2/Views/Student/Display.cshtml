@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+@{
+    int x = 30;
+    string[] names = new string[] { "masa", "mhmd" ,"malek"};
+    int degree = 30;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body>
+    <ul>
+        @foreach (var item in names)
+        {
+            <li>@item</li>
+        }
+       
+    </ul>
+    <h2>@(x+1)</h2>
+    @if (degree < 50)
+    {
+        <h2>failed</h2>
+    }else
+    {
+        <h2>success</h2>
+    }
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿@model Department
+@{
+    Layout = "_Layout2";
+    ViewBag.title = "dept delete";
+}
+
+
+    <h4>are you sure you want to delete this department  @Model.DeptId @Model.Name @Model.Capacity </h4>
+    <form method="post" class="form-Group">
+        <input asp-for="DeptId" type="hidden" />
+       Name <input asp-for="Name" class="form-control" />
+       Capacity<input asp-for="Capacity" class="form-control" />
+       <input  type="submit" value="Delete"/>
+    </form>

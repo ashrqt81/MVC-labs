@@ -1,0 +1,15 @@
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\bin\Debug\net6.0\threadingLab1.exe
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\bin\Debug\net6.0\threadingLab1.deps.json
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\bin\Debug\net6.0\threadingLab1.runtimeconfig.json
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\bin\Debug\net6.0\threadingLab1.dll
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\bin\Debug\net6.0\threadingLab1.pdb
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.csproj.AssemblyReference.cache
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.AssemblyInfoInputs.cache
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.AssemblyInfo.cs
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.csproj.CoreCompileInputs.cache
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.dll
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\refint\threadingLab1.dll
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.pdb
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\threadingLab1.genruntimeconfig.cache
+C:\Users\EL SafA\Desktop\MVC core\threadingLab1\threadingLab1\obj\Debug\net6.0\ref\threadingLab1.dll

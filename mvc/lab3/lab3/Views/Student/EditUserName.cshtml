@@ -1,0 +1,60 @@
+﻿
+    @model Student
+
+
+    <!DOCTYPE >
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+
+    <form class="container" asp-action="EditUserName" method="post" enctype="multipart/form-data" >
+               -
+             
+               <input  class="form-control" asp-for="Id" type="hidden"  placeholder="name" >
+
+             
+                <input  class="form-control" asp-for="Name"  type="hidden" placeholder="name" value=@Model.Name>
+             
+            
+                <input class="form-control"asp-for="age" type="hidden" placeholder="age" value=@Model.age>
+            
+  
+                <select asp-for="deptno" asp-items="ViewBag.depts" class="form-control" hidden></select>
+          
+       
+               <!--  <select class="form-control" asp-for="deptno" type="hidden"  type="hidden" asp-items="ViewBag.depts" ></select>-->
+              
+              
+                <input type="file" class="form-control-file"   type="hidden"  asp-for="StdImg"  value=@Model.StdImg>
+            
+                
+                <input class="form-control"asp-for="Email"type="hidden" placeholder="Email" value=@Model.Email>
+             
+                 <div class="form-group">
+                <label asp-for="Username">UserName</label>
+                <input class="form-control"asp-for="Username" placeholder="UserName">
+              </div>
+              <div class="form-group">
+                <label asp-for="Password">Password</label>
+                <input type="text" class="form-control"asp-for="Password" value=@Model.Password >
+              </div>
+
+              <div class="form-group">
+                <label asp-for="Cpassword">Confirm Password</label>
+                <input type="password" class="form-control"asp-for="Cpassword" placeholder="cPassword">
+             
+              </div>
+             
+               <button type="submit" class="btn btn-primary mb-2">Submit</button>
+             
+</form>
+</body>
+</html>
+
+
+

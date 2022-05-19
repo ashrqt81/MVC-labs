@@ -1,0 +1,51 @@
+﻿@using lab3
+@model List<Department>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        body{
+            width:900px;
+           
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+   
+  
+    <table class= " table table-striped">
+        <thead>
+            <th>dept Id</th>
+            <th>dept name</th>
+            <th>dept capacity</th>
+            <th></th>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                <td>@item.DeptId</td>
+                <td>@item.Name</td>
+                <td>@item.Capacity</td>
+                <td>
+                    <a asp-action="edit" asp-controller="department" asp-route-id="@item.DeptId" class="btn btn-danger">Edit</a>
+                </td>
+                <td> <a asp-action="showAdd" asp-controller="department" class="btn btn-success">Add</a></td>
+
+                <td><a asp-action="Delete" asp-controller="department" asp-route-id="@item.DeptId" class="btn btn-warning">Delete</a></td>
+                @* <td><a asp-action="Delete" asp-controller="department" asp-route-id="@item.DeptId" onclick="return confirm('are u sure')">Delete</a></td>*@
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+</body>
+</html>

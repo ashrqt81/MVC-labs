@@ -1,0 +1,23 @@
+﻿@model Department
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+      <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <form method="post" class="form-Group">
+        <input asp-for=DeptId type="hidden" />
+
+      <partial name="CreateUpdate"/>
+
+     <input type="submit"value="update"/>
+    </form>
+</body>
+</html>

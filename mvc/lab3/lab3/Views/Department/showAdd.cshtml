@@ -1,0 +1,24 @@
+﻿@model Department
+@{
+    Layout = null;
+    //input name should be the sama syntax wz 
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>showAdd</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+   
+</head>
+<body>
+    <form asp-action="create" asp-controller="department">
+  <label>Department Id</label>  <input asp-for=DeptId class="form-control"/>
+     <partial name="CreateUpdate"/>
+       <input type="submit" value="add" />
+      
+    </form>
+</body>
+</html>

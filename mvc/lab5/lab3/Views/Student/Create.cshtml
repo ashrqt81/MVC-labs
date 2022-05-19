@@ -1,0 +1,46 @@
+﻿@model Student
+@{
+    Layout = "_Layout2";
+}
+
+
+
+   <form method="post" enctype="multipart/form-data" class="form-Group" >
+       <div asp-validation-summary=ModelOnly></div>
+      Name <input asp-for=Name class="form-control"/>
+      <span asp-validation-for=Name></span>
+      <br />
+       Age <input asp-for=age class="form-control" />
+       <span asp-validation-for=age></span>
+       <br />
+      Student Image <input type="file" name="StdImg" class="form-control" />
+      <span asp-validation-for=StdImg></span>
+      <br />
+
+       Email <input asp-for=Email class="form-control" />
+       <span asp-validation-for=Email></span>
+       <br />
+
+        Password <input asp-for=Password class="form-control" />
+       <span asp-validation-for=Password></span>
+       <br />
+
+        confirm password <input asp-for=Cpassword class="form-control" />
+       <span asp-validation-for=Cpassword></span>
+       <br />
+
+        Username <input asp-for=Username class="form-control" />
+       <span asp-validation-for=Username></span>
+       <br />
+      
+     department <select asp-for="deptno" asp-items="ViewBag.depts" class="form-control"></select>
+          
+        <input type="submit" value="add" class="btn btn-success"class="form-control" />
+     
+
+   </form>
+   
+  @section script{
+  <partial name="_ValidationScriptsPartial" />
+
+  }

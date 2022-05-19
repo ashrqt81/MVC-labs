@@ -1,0 +1,14 @@
+﻿@model Department
+@{
+    Layout = "_Layout2";
+    ViewBag.title = "dept show";
+    //input name should be the sama syntax wz 
+}
+
+
+    <form asp-action="create" asp-controller="department">
+  <label>Department Id</label>  <input asp-for=DeptId class="form-control"/>
+     <partial name="CreateUpdate"/>
+       <input type="submit" value="add" />
+      
+    </form>

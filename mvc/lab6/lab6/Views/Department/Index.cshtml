@@ -1,0 +1,18 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>index</h1>
+    <h1>@TempData.Peek("id")</h1>
+    <a asp-action="show" asp-controller="Department">show</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>add</title>
+</head>
+<body>
+    
+    <form action="/Student/show2" method="post" enctype="multipart/form-data">
+    <input type="file" name="stdfile" />
+       id <input  type="number" name="std1.id" />
+      fname <input type="text"name="std1.fname" /> 
+      lname <input type="text"name="std1.lname" />
+      age <input type="number"name="std1.age" />
+      
+      <select multiple name="course.courses">
+          <option >c#</option>
+          <option value="2">js</option>
+          <option value="3">bi</option>
+          <option value="4">linq</option>
+      </select>
+
+
+       id <input  type="number" name="std2.id" />
+      fname <input type="text"name="std2.fname" /> 
+      lname <input type="text"name="std2.lname" />
+      age <input type="number"name="std2.age" />
+       <input type="submit" />
+    </form>
+</body>
+</html>

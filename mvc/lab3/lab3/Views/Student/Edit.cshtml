@@ -1,0 +1,35 @@
+﻿@model Student
+
+
+
+    <form class="container" asp-action="Edit" method="post" enctype="multipart/form-data" >
+                <input  class="form-control" asp-for="Id" type="hidden"  placeholder="name">
+
+              <div class="form-group">
+                <label asp-for="Name" >Name</label>
+                <input  class="form-control" asp-for="Name"   placeholder="name">
+              </div>
+              <div class="form-group">
+                <label asp-for="age">Age</label>
+                <input class="form-control"asp-for="age" placeholder="age">
+              </div>
+  
+              <div class="form-group">
+                <label  asp-for="deptno"> Choose Department</label>
+                <select class="form-control" asp-for="deptno" asp-items="ViewBag.depts"></select>
+              </div>
+             
+                <input type="file" class="form-control-file"  type="hidden"  asp-for="StdImg" value=@Model.StdImg>
+                 <div class="form-group">
+                  <label asp-for="Email">Email</label>
+                <input class="form-control"asp-for="Email" placeholder="Email" >
+                </div>
+              
+                <input class="form-control"asp-for="Username" type="hidden"  placeholder="UserName"  value=@Model.Username>
+              
+                <input type="password" class="form-control"asp-for="Password" type="hidden" placeholder="Password" value=@Model.Password>
+              
+               <button type="submit" class="btn btn-primary mb-2">Submit</button>
+             
+</form>
+

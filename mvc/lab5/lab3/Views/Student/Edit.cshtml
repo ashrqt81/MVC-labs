@@ -1,0 +1,44 @@
+﻿@model Student;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>Edit</title>
+    <style>
+    .form1{
+      color:red;
+      
+    }
+        </style>
+</head>
+<body>
+
+    <form class="form1"  asp-action="editform1" asp-controller="Student">
+          id  <input asp-for="Id" class="form-control"/>
+       Name <input asp-for="Name"class="form-control" />
+       Age <input asp-for="age" class="form-control"/>
+       department<select asp-for="deptno" asp-items="ViewBag.depts" ></select>
+          <input type="submit" value="Edit" class="btn btn-success" />
+    </form>
+    <!--
+   <form method="post"class="form-Group" >
+      
+      Image  <input type="file" class="form-control"/>
+       Email <input asp-for="Email" class="form-control" />
+      username  <input asp-for="Username" class="form-control"/>
+       Password <input asp-for="Password" class="form-control"/>
+       </form>
+    -->
+    
+       
+        
+
+   
+</body>
+</html>
